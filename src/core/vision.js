@@ -16,7 +16,7 @@ export class VisionSystem {
         // Face Mesh
         this.faceMesh = new FaceMesh({
             locateFile: (file) => {
-                return `/mediapipe/face_mesh/${file}`;
+                return `https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/${file}`;
             }
         });
         this.faceMesh.setOptions({
@@ -35,7 +35,7 @@ export class VisionSystem {
         // Hands
         this.hands = new Hands({
             locateFile: (file) => {
-                return `/mediapipe/hands/${file}`;
+                return `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`;
             }
         });
         this.hands.setOptions({
