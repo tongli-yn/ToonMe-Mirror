@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToonMe Mirror - Project Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loading-overlay">
+        <span class="loader"></span>
+        <h2>Initializing AI Models...</h2>
+        <p>Please allow camera access.</p>
+    </div>
+
+    <div id="ui-layer">
+        <h1>ToonMe Mirror</h1>
+        <div id="status" class="status-badge loading">Booting...</div>
+
+        <div class="instructions">
+            <div>🖐️ <span class="key-gesture">Open Hand</span> to resize</div>
+            <div>🤏 <span class="key-gesture">Pinch Button</span> to switch</div>
+        </div>
+
+        <div style="margin-top: 15px;">
+            <label style="display:flex; align-items:center; gap:8px; font-size: 0.8rem; cursor: pointer;">
+                <input type="checkbox" id="debugToggle"> Show Debug Info
+            </label>
+        </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
